@@ -79,7 +79,7 @@ if __name__ == '__main__':
     material_node.inputs['Base Color'].default_value = palette[1]
     material_node.inputs['Metallic'].default_value = 0.0
     material_node.inputs['Roughness'].default_value = 0.5
-    material_node.inputs['Specular'].default_value = 0.5
+    material_node.inputs['Specular IOR Level'].default_value = 0.5
 
     # Add bump texture
     bump_texture_node = mat.node_tree.nodes.new('ShaderNodeTexNoise')

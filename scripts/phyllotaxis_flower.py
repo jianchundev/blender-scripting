@@ -101,7 +101,7 @@ class PhyllotaxisFlower():
                 T = Matrix.Translation(p)
                 bmesh.ops.create_cone(bm,
                     cap_ends=True, segments=6,
-                    diameter1=r2, diameter2=r2,
+                    radius1=r2, radius2=r2,
                     depth=0.1*r2, matrix=T @ M0 @ M1 @ Rot)
         return bm
 

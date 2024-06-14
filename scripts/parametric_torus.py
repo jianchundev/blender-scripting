@@ -68,7 +68,7 @@ if __name__ == '__main__':
     bpy.context.scene.cursor.location = (0, 0, 0)
 
     # Create lamps
-    utils.rainbowLights(10, 100, 3, energy=300)
+    utils.rainbow_lights(10, 100, 3, energy=300)
 
     # Create object
     obj = create_surface(torus_surface(4, 2), 20, 20)

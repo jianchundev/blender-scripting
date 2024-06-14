@@ -74,6 +74,7 @@ if __name__ == '__main__':
     scene.render.resolution_y = 512
     scene.render.resolution_percentage = 100
     scene.render.engine = 'CYCLES'
+    scene.cycles.device = 'GPU'
     #scene.render.engine = 'BLENDER_EEVEE'
     scene.render.filepath = 'rendering/simple_sphere.png'
     bpy.ops.render.render(write_still=True)

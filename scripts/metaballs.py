@@ -31,7 +31,7 @@ if __name__ == '__main__':
     camera = utils.create_camera((-10, -10, 10), target)
 
     # Create lights
-    utils.rainbowLights(10, 100, 3, energy=100)
+    utils.rainbow_lights(10, 100, 3, energy=100)
 
     # Create metaball
     obj = createMetaball()

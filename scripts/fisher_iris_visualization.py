@@ -83,11 +83,11 @@ def create_scatter(X, y, size=0.25):
                 size=size, matrix=T)
         elif labelIdx % 3 == 1:
             bmesh.ops.create_icosphere(bmList[labelIdx],
-                diameter=size/2, matrix=T)
+                radius=size/2, matrix=T)
         else:
             bmesh.ops.create_cone(bmList[labelIdx],
                 segments=6, cap_ends=True,
-                diameter1=size/2, diameter2=0,
+                radius1=size/2, radius2=0,
                 depth=size, matrix=T)
 
     objects = []

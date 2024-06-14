@@ -158,6 +158,8 @@ def render(
     scene.render.resolution_y = resolution_y
     scene.render.resolution_percentage = resolution_percentage
     scene.render.engine = render_engine
+    scene.cycles.device = 'GPU'
+
     if frame_end:
         scene.frame_end = frame_end
 
